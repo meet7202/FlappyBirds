@@ -1,0 +1,79 @@
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="nn/nn.js"></script>
+    <script language="javascript" type="text/javascript" src="nn/matrix.js"></script>
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+    <script language="javascript" type="text/javascript" src="ga.js"></script>
+    <script language="javascript" type="text/javascript" src="bird.js"></script>
+    <script language="javascript" type="text/javascript" src="pipe.js"></script>
+    <link rel="stylesheet" href="index.css">
+  <title>LOI | Flappy Birds</title>
+  </head>
+  
+  <body>
+    <header>
+
+      <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container" >
+                  <h3 style="color: white; text-align: center">LOI Project | Flappy Birds</h3>
+              
+          </div>    
+      </div>
+  
+  </header>
+  <br><br><br><br>
+     <div class="row">
+    <div class="col col-6">
+       <div id="canvascontainer"></div>
+    </div>
+    <div class="container">
+    <div class= "col col-6" id="info">
+        <h3>Information</h3>
+         <span>Generation: <span id="gs">0</span></span>
+        
+        <br> <br/> <span>Current Score: <span id="hs">0</span></span>
+        <br/> <span>Highest Score: <span id="ahs">0</span></span>
+        <br />
+        <br/> <span>Alive Birds: <span id="aliveb">500</span></span>
+        <br /><br>
+        <span>Speed : <input class="range-slider" id="speedSlider" type="range" min="1" max="10" value="1"></span><span id="speed">1</span></span>
+        <hr/>
+      </div>
+    </div>
+    <div class="container">
+    <div class='row'>
+    
+      <div class="col col-xs-8"></div>  
+      <div class="col col-xs-4">  
+      <h3>Generation Wise Score</h3>
+        <table id="myTable" border="2px" border-collapesed>
+          <tr>
+            <th>Generation</th>
+            <th>Score</th>
+          </tr>
+        </table>
+      </div>
+      </div>
+    </div>
+    
+      <footer>
+        <div style="color : white" class="footer navbar-inverse navbar-fixed-bottom">
+            <center>
+                <p>Copyright &copy; LOI Developers Team. All Rights Reserved<br>
+                    <a target="_blank" href="https://github.com/maharshikahodariyadaiict">Maharshi Kahodariya</a> - 201501228<br>
+                      <a target="_blank" href="https://github.com/poojapatel28">Pooja Patel</a> - 201501125<br>
+                      <a target="_blank" href="http://meetshah.tech">Meet Shah</a>  - 201501185</p>
+                      
+                  </center>
+        </div>
+    </footer>
+
+  </body>
+  
+  </html>

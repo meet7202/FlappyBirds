@@ -1,0 +1,102 @@
+body{
+  background-image: url('img.jpg');
+  background-color: #cccccc;
+}
+#info {
+    padding-left: 200;
+
+   padding-left: 800;
+}
+ #names {
+    padding-top: 300;
+}
+ h1{
+    text-align: center;
+}
+
+
+ .range-slider {
+    -webkit-appearance: none;
+    width: 300px;
+    height: 10px;
+    border-radius: 5px;
+    background: #d7dcdf;
+    outline: none;
+    padding: 0;
+    margin: 0;
+  }
+   .low.range-slider{
+    background: #f5c8c8;
+  }
+  .high.range-slider{
+    background: #b6d2b9;
+  }
+  
+  .range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+            appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2c3e50;
+    cursor: pointer;
+    -webkit-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+  }
+  
+  
+  /* .range-slider::-webkit-slider-thumb:hover,
+  .range-slider:active::-webkit-slider-thumb {
+    background: #1abc9c;
+  } */
+  
+  .range-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background: #2c3e50;
+    cursor: pointer;
+    -webkit-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+  }
+  
+  /* .range-slider::-moz-range-thumb:hover,
+  .range-slider:active::-moz-range-thumb {
+    background: #1abc9c;
+  } */
+  
+  
+  .range-slider::-webkit-slider-thumb:hover,
+  .range-slider:active::-webkit-slider-thumb {
+    background: #03A9F4;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .range-slider::-moz-range-thumb:hover,
+  .range-slider:active::-moz-range-thumb {
+    background: #03A9F4;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .low::-webkit-slider-thumb:hover,
+  .low:active::-webkit-slider-thumb {
+    background: red;
+  }
+  
+  .high::-webkit-slider-thumb:hover,
+  .high:active::-webkit-slider-thumb {
+    background: #1abc9c;
+  }
+  
+  ::-moz-range-track {
+    background: #d7dcdf;
+    border: 0;
+  }
+  
+  input::-moz-focus-inner,
+  input::-moz-focus-outer {
+    border: 0;
+  }
