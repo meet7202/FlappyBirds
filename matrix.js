@@ -1,5 +1,3 @@
-// let m = new Matrix(3,2);
-
 
 class Matrix {
   constructor(rows, cols) {
@@ -28,7 +26,6 @@ class Matrix {
       return;
     }
 
-    // Return a new Matrix a-b
     return new Matrix(a.rows, a.cols)
       .map((_, i, j) => a.data[i][j] - b.data[i][j]);
   }
@@ -65,7 +62,6 @@ class Matrix {
   }
 
   static multiply(a, b) {
-    // Matrix product
     if (a.cols !== b.rows) {
       console.log('Columns of A must match rows of B.')
       return;
@@ -73,7 +69,6 @@ class Matrix {
 
     return new Matrix(a.rows, b.cols)
       .map((e, i, j) => {
-        // Dot product of values in col
         let sum = 0;
         for (let k = 0; k < a.cols; k++) {
           sum += a.data[i][k] * b.data[k][j];
@@ -89,16 +84,13 @@ class Matrix {
         return;
       }
 
-      // hadamard product
       return this.map((e, i, j) => e * n.data[i][j]);
     } else {
-      // Scalar product
       return this.map(e => e * n);
     }
   }
 
   map(func) {
-    // Apply a function to every element of matrix
     for (let i = 0; i < this.rows; i++) {
       for (let j = 0; j < this.cols; j++) {
         let val = this.data[i][j];
@@ -109,7 +101,6 @@ class Matrix {
   }
 
   static map(matrix, func) {
-    // Apply a function to every element of matrix
     return new Matrix(matrix.rows, matrix.cols)
       .map((e, i, j) => func(matrix.data[i][j], i, j));
   }
