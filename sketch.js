@@ -131,7 +131,7 @@ function draw() {
       generationSpan.html(genCounter);
       console.log(genCounter + "   " + genScore);
       var table = document.getElementById("myTable");
-      var row = table.insertRow(i++);
+      var row = table.insertRow(i+1);
       var cell1 = row.insertCell(0);
       var cell2 = row.insertCell(1);
       i++;
